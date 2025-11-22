@@ -1,6 +1,7 @@
 import "./style.scss";
 import { HelmetProvider } from "react-helmet-async";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom"; // Так как GitHub Pages не работает через "чистые" маршруты, меняем BrowserRouter → HashRouter.
 
 import MainPage from "./components/MainPage";
 import CatalogPage from "./components/CatalogPage";
