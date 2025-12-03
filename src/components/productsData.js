@@ -8,7 +8,7 @@ const products = [
     price: 52.0,
     size: "M",
     color: "Red",
-    imageUrl: "img/prod1.jpg",
+    imageUrl: "img/prod1.png",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const products = [
     price: 52.0,
     size: "S",
     color: "Red",
-    imageUrl: "img/prod2.jpg",
+    imageUrl: "img/prod2.png",
   },
   {
     id: 3,
@@ -98,7 +98,7 @@ const products = [
     price: 52.0,
     size: "XS",
     color: "Red",
-    imageUrl: "../img/prod10.png",
+    imageUrl: "img/prod10.png",
   },
   {
     id: 11,

@@ -58,7 +58,7 @@ function MainPage() {
           </div>
         </div>
         <div className="products center">
-          <p className="products_title">Fetured Items</p>
+          <p className="products_title">Featured Items</p>
           <p className="products_text">
             Shop for items based on what we featured in this week
           </p>

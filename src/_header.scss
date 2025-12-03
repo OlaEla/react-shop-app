@@ -42,7 +42,7 @@
 
 .main_menu_bar {
     position: absolute;
-    top: 75px;
+    top: 100%;
     right: 0;
     padding: 1rem;
     background-color: #f9f9f9;
@@ -135,31 +135,97 @@ ul li {
     line-height: normal;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+/* ===========================
+   📱 Адаптивность Header
+   =========================== */
+
+/* --- Планшеты 768–1024px --- */
+@media (max-width: 1024px) {
+
+    .header {
+        height: 70px;
+    }
 
     .header_left {
         margin-left: 16px;
+        gap: 24px; 
     }
 
     .header_right {
         margin-right: 16px;
+        gap: 24px;
+    }
+
+    .menu_icon svg,
+    .user_icon svg,
+    .cart_icon svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* --- Мобильные 480–767px --- */
+@media (max-width: 767.98px) {
+
+    .header {
+        height: 65px;
+    }
+
+    .header_left {
+        margin-left: 12px;
+        gap: 20px;
+    }
+
+    .header_right {
+        margin-right: 12px;
+        gap: 20px;
+    }
+
+    /* Иконки чуть меньше */
+    .menu_icon svg,
+    .user_icon svg,
+    .cart_icon svg {
+        width: 20px;
+        height: 20px;
     }
 
 }
 
-@media (max-width: 767.98px) {
+/* --- Маленькие телефоны 320–479px --- */
+@media (max-width: 479.98px) {
+
+    .header {
+        height: 60px;
+    }
 
     .header_left {
         margin-left: 8px;
+        gap: 16px;
     }
 
     .header_right {
         margin-right: 8px;
+        gap: 16px;
     }
 
+    .menu_icon svg,
+    .user_icon svg,
+    .cart_icon svg {
+        width: 18px;
+        height: 18px;
+    }
+
+}
+
+/* --- Очень маленькие устройства < 300px --- */
+@media (max-width: 299.98px) {
     .user,
     .cart {
         display: none;
     }
 
+    .menu_icon svg {
+        width: 16px;
+        height: 16px;
+    }
 }
